@@ -60,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-const animateElements = document.querySelectorAll('.skill-category, .project-card, .stat, .contact-method, .timeline-item');
+const animateElements = document.querySelectorAll('.skill-category, .project-card, .stat, .contact-method, .experience-card');
 animateElements.forEach(el => {
     observer.observe(el);
 });
