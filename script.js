@@ -36,7 +36,7 @@ navLinks.forEach(link => {
         const targetSection = document.querySelector(targetId);
         
         if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 70; // Account for fixed navbar
+            const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
@@ -60,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-const animateElements = document.querySelectorAll('.skill-category, .project-card, .stat, .contact-method');
+const animateElements = document.querySelectorAll('.skill-category, .project-card, .stat, .contact-method, .timeline-item');
 animateElements.forEach(el => {
     observer.observe(el);
 });
