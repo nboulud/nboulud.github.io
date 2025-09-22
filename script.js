@@ -85,7 +85,7 @@ function typeWriter(element, text, speed = 100) {
 window.addEventListener('load', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
+        const originalText = heroTitle.textContent; // Use textContent instead of innerHTML
         typeWriter(heroTitle, originalText, 50);
     }
 });
