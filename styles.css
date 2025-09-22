@@ -110,7 +110,6 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -143,6 +142,7 @@ body {
     gap: 4rem;
     align-items: center;
     min-height: 80vh;
+    padding: 2rem 0;
 }
 
 .hero-text {
@@ -469,6 +469,8 @@ section {
 /* About Section */
 .about {
     background: #111;
+    margin-top: 0;
+    padding-top: 5rem;
 }
 
 .about-content {
